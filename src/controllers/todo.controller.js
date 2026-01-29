@@ -17,7 +17,6 @@ exports.createTodo = async (req, res) => {
     // if (!title || !content) return false;
 
     const todo = await createTodoByServices(title, content);
-    console.log(todo);
 
     res.status(201).json({ status: 'success', message: 'todo has been created!', todo });
   } catch (error) {

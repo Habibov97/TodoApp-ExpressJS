@@ -7,7 +7,7 @@ const todoListByServices = async () => {
 };
 const createTodoByServices = async (title, content) => {
   const todos = await todoListByServices();
-  console.log(todos);
+
   const id = todos.length ? todos[todos.length - 1].id + 1 : 1;
 
   const todo = {
